@@ -22,7 +22,7 @@
     <h2 class="text-center mb-4">Productos Tecnológicos para el Hogar</h2>
     <div class="row">
       <div class="col-md-3 text-center p-3">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="img-fluid mb-2" alt="Electrodomésticos">
+          <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcedfeaec472b72287e1e2.png" class="img-fluid mb-2" alt="Electrodomésticos">
         <h5>Electrodomésticos</h5>
       </div>
       <div class="col-md-3 text-center">

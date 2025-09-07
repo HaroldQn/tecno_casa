@@ -18,29 +18,44 @@
 
   
   <!-- Sección Productos -->
-  <section class="container my-5" style="background: #ffc267">
-    <h2 class="text-center mb-4">Productos Tecnológicos para el Hogar</h2>
-    <div class="row">
-      <div class="col-md-3 text-center p-3">
-          <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcedfeaec472b72287e1e2.png" class="img-fluid mb-2" alt="Electrodomésticos">
-        <h5>Electrodomésticos</h5>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046869.png" class="img-fluid mb-2" alt="Smart Home">
-        <h5>Smart Home</h5>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046875.png" class="img-fluid mb-2" alt="Entretenimiento">
-        <h5>Entretenimiento</h5>
-      </div>
-    </div>
+  <section class="container" style="background: #ffc267">
+        <div>
+            <h2 class="text-center mt-3">Productos TECNOLÓGICOS para el Hogar</h2>
+            <h4 class="text-center">Envío a todo el Perú</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcedfeaec472b72287e1e2.png" class="img-fluid mb-2" alt="Electrodomésticos">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcedfeaec472b72287e1e4.png" class="img-fluid mb-2" alt="Smart Home">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf15f179ddbfa7ada3187.png" class="img-fluid mb-2" alt="Entretenimiento">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf15f179ddbfa7ada3188.png" class="img-fluid mb-2" alt="Entretenimiento">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf1ab903cab61b257608d.png" class="img-fluid mb-2" alt="Entretenimiento">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf1ab903cab61b257608f.png" class="img-fluid mb-2" alt="Entretenimiento">
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf15f179ddbfa7ada3189.png" class="img-fluid mb-2" alt="Entretenimiento">>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf19eec4d6d8c50b4e334.png" class="img-fluid mb-2" alt="Entretenimiento">
+            </div>
+        </div>
   </section>
   <!-- Sección Sugerencias -->
   <section class="container my-5">
-    <h2 class="text-center mb-4">Sugerencias</h2>
+    <h2 class="mb-4 text-center">Sugerencias</h2>
     <div class="row align-items-center">
       <div class="col-md-6 text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="img-fluid" alt="Sugerencias">
+        <img src="${pageContext.request.contextPath}/imgs/sugerencia.png" class="img-fluid" alt="Sugerencias">
       </div>
       <div class="col-md-6">
         <form class="p-4 border rounded shadow-sm bg-light">
@@ -63,15 +78,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="faq.html" class="text-decoration-none text-light">Preguntas Frecuentes</a>
-      <a href="reclamos.html">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828774.png" alt="Libro de reclamaciones" width="40">
-      </a>
-    </div>
-  </footer>
-
+  <jsp:include page="/components/footer.jsp" flush="true" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

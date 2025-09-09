@@ -16,9 +16,17 @@
             </button>
         </form>
         <div class="ms-auto">
-            <a class="nav-link text-light fw-bolder" href="#">
-                <i class="bi bi-box-arrow-in-right me-2 fs-2"></i>
-            </a>
+            <div class="dropdown">
+                <a class="btn dropdown-toggle text-light shadow-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-arrow-in-right me-2 fs-2"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.jsp?page=register">Registrarte</a></li>
+                  <li><a class="dropdown-item" href="login.jsp?page=login">Iniciar Session</a></li>
+                </ul>
+            </div>
+            
         </div>
     </div>
 </nav>

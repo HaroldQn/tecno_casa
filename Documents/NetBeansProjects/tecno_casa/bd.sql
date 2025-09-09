@@ -1,4 +1,5 @@
 CREATE DATABASE tecno_casa;
+use tecno_casa;
 
 CREATE TABLE usuarios(
 	idusuario int primary key auto_increment,
@@ -7,3 +8,4 @@ CREATE TABLE usuarios(
     nombre varchar(50)
 )ENGINE=INNODB;
 
+SELECT * FROM usuarios;

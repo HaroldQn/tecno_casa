@@ -43,7 +43,7 @@
                 <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf1ab903cab61b257608f.png" class="img-fluid mb-2" alt="Entretenimiento">
             </div>
             <div class="col-md-3 text-center">
-                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf15f179ddbfa7ada3189.png" class="img-fluid mb-2" alt="Entretenimiento">>
+                <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf15f179ddbfa7ada3189.png" class="img-fluid mb-2" alt="Entretenimiento">
             </div>
             <div class="col-md-3 text-center">
                 <img src="${pageContext.request.contextPath}/imgs/pixlr-image-generator-68bcf19eec4d6d8c50b4e334.png" class="img-fluid mb-2" alt="Entretenimiento">

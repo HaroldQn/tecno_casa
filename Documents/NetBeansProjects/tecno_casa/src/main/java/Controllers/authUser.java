@@ -97,6 +97,26 @@ public class authUser extends HttpServlet {
                     request.getRequestDispatcher("/views/login.jsp").forward(request, response);
                 };
                 break;
+                
+            case "login":
+                String emailLogin = request.getParameter("email");
+                String claveLogin = request.getParameter("clave");
+                
+                boolean exito = loginUsuario(request, emailLogin, claveLogin);
+                if(exito){
+                    response.sendRedirect(request.getContextPath() + "/views/paginaInicio.jsp");
+                } else {
+                    request.setAttribute("page", "login");
+                    request.setAttribute("error", "Email o contraseña incorrectos");
+                    request.getRequestDispatcher("/views/login.jsp").forward(request, response);
+                }
+                break;
+                
+            case "cerrar":
+                request.getSession().invalidate();
+                response.sendRedirect(request.getContextPath() + "/views/paginaInicio.jsp");
+                break;
+                
             default:
                 throw new AssertionError();
         }     
@@ -130,6 +150,19 @@ public class authUser extends HttpServlet {
         
         
     };
+    
+    private boolean loginUsuario(HttpServletRequest request ,String email, String clave){
+        Usuario usu =  validarUsuario(email);
+        if(usu != null){
+            boolean comparador = Encriptamiento.verificar(clave, usu.getClave());
+            if(comparador){
+                request.getSession().setAttribute("usuario", usu.getNombre());
+                return true;
+            }
+        }
+        return false;
+    }
+    
     
     private Usuario validarUsuario (String email){
         Usuario usuario = null;
